@@ -3,39 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <title>My Weather App</title>
   </head>
   <body>
-    <heaher>
-      <form>
-        <input type="search" placeholder="Ener a city..." required />
-        <input type="submit" value="Search" />
-      </form>
-    </heaher>
-    <main>
-      <div>
-        <h1>Canberra</h1>
-        <p>
-          Sunday 14:30, Rain
-          <br />
-          Humidity: 84%, Wind: 24km/h
-        </p>
-      </div>
-      <div>⛈️ 20℃</div>
-    </main>
+    <div class="container">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-bar"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1>Canberra</h1>
+          <p>
+            Sunday 14:30, Rain
+            <br />
+            Humidity: 84%, Wind: 24km/h
+          </p>
+        </div>
+        <div>⛈️ 20℃</div>
+      </main>
 
-    <footer>
-      This project is coded by
-      <a href="https://github.com/y-shihui" target="_blank">Shihui Yang</a> and
-      can be found on
-      <a href="https://github.com/y-shihui/my-weather-app" target="_blank"
-        >GitHub</a
-      >. Hosted by
-      <a
-        href="https://my-first-weather-forecast-app.netlify.app/"
-        target="_blank"
-        >Netlify</a
-      >.
-    </footer>
+      <footer>
+        This project is coded by
+        <a href="https://github.com/y-shihui" target="_blank">Shihui Yang</a>
+        and can be found on
+        <a href="https://github.com/y-shihui/my-weather-app" target="_blank"
+          >GitHub</a
+        >. Hosted by
+        <a
+          href="https://my-first-weather-forecast-app.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >.
+      </footer>
+    </div>
   </body>
 </html>
