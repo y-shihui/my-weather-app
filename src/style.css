@@ -33,9 +33,10 @@ body {
   background-color: #dfd3c3;
   font-size: 15px;
   color: dimgray;
+  cursor: pointer;
 }
 
-.data-country {
+.data-city {
   margin: 25px 0 10px 0;
   font-size: 50px;
   color: #596e79;
