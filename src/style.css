@@ -1,10 +1,10 @@
 body {
   background-color: #f0ece2;
-  font-family: "Instrument Sans";
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .container {
-  max-width: 700px;
+  max-width: 600px;
   margin: 30px auto;
   padding: 30px;
   border-radius: 10px;
@@ -12,6 +12,8 @@ body {
 }
 .search-form {
   margin: 15px auto;
+  border-bottom: 1px solid #dfd3c3;
+  padding: 0 0 30px 0;
 }
 .search-bar {
   width: 80%;
@@ -25,10 +27,64 @@ body {
 
 .search-button {
   padding: 15px;
-  width: 18%;
+  width: 19%;
   border: none;
   border-radius: 5px;
   background-color: #dfd3c3;
   font-size: 15px;
   color: dimgray;
+}
+
+.data-country {
+  margin: 25px 0 10px 0;
+  font-size: 50px;
+  color: #596e79;
+}
+
+.data-details {
+  line-height: 25px;
+  margin: 0;
+  padding: 10px 0 50px 0;
+  color: dimgray;
+}
+
+.data-details strong {
+  color: #596e79;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.data-temp-container {
+  display: flex;
+}
+
+.data-temp-icon {
+  font-size: 40px;
+  padding: 30px 15px 0 0;
+}
+
+.data-temp-number {
+  font-size: 90px;
+  font-weight: 580;
+  color: #596e79;
+}
+
+.data-temp-unit {
+  padding: 15px 15px 0 0;
+  font-size: 20px;
+  color: dimgray;
+}
+
+footer {
+  border-top: 1px solid #dfd3c3;
+  padding: 30px 0 0 0;
+  text-align: center;
+  color: dimgray;
+}
+footer a {
+  color: #596e79;
 }
