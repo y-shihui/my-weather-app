@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>My Weather App</title>
   </head>
   <body>
@@ -27,7 +28,7 @@
         </form>
       </header>
       <main>
-        <h1 class="data-city" id="city">Canberra</h1>
+        <h1 class="data-city" id="city"></h1>
         <div class="data">
           <p class="data-details">
             Sunday 14:30, Rain
@@ -36,7 +37,7 @@
           </p>
           <div class="data-temp-container">
             <div class="data-temp-icon">⛈️</div>
-            <div class="data-temp-number">20</div>
+            <div class="data-temp-number" id="temp"></div>
             <div class="data-temp-unit">℃</div>
           </div>
         </div>
