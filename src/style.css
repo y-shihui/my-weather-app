@@ -39,7 +39,7 @@ body {
 .data-city {
   margin: 25px 0 10px 0;
   font-size: 50px;
-  color: #596e79;
+  color: #a05135;
 }
 
 .data-details {
@@ -50,7 +50,7 @@ body {
 }
 
 .data-details strong {
-  color: #596e79;
+  color: #a05135;
 }
 
 .data {
@@ -71,13 +71,13 @@ body {
 .data-temp-number {
   font-size: 90px;
   font-weight: 580;
-  color: #596e79;
+  color: #a05135;
 }
 
 .data-temp-unit {
   padding: 15px 15px 0 0;
   font-size: 20px;
-  color: dimgray;
+  color: #a05135;
 }
 
 footer {
@@ -87,5 +87,5 @@ footer {
   color: dimgray;
 }
 footer a {
-  color: #596e79;
+  color: #a05135;
 }
