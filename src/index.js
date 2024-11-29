@@ -52,7 +52,31 @@ function processSearch(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Sat", "Sun", "Mon", "Tue", "Wed"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `  <div class="forecast-data-day">
+            <div class="forecast-data-date">${day}</div>
+            <div class="forecast-data-icon">🌤️</div>
+            <div class="forecast-data-temp">
+              <span class="forecast-data-highest-temp"
+                ><strong>30℃ </strong></span
+              >
+              <span class="forecast-data-lowest-temp">25℃</span>
+            </div>
+          </div>`;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchBarElement = document.querySelector("#search-form");
 searchBarElement.addEventListener("submit", processSearch);
 
 searchCity("Singapore");
+displayForecast();
