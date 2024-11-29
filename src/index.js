@@ -16,6 +16,8 @@ function refreshWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   dateTimeElement.innerHTML = formatDate(date);
   iconElement.innerHTML = `<img src= "${response.data.condition.icon_url}" class="data-temp-icon" /> `;
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -52,6 +54,12 @@ function processSearch(event) {
   searchCity(searchInput.value);
 }
 
+function getForecast(city) {
+  let apiKey = "c83b0ec93of1f1cda798a46704ft55fb";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function displayForecast() {
   let days = ["Sat", "Sun", "Mon", "Tue", "Wed"];
   let forecastHtml = "";
@@ -79,4 +87,3 @@ let searchBarElement = document.querySelector("#search-form");
 searchBarElement.addEventListener("submit", processSearch);
 
 searchCity("Singapore");
-displayForecast();
