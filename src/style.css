@@ -84,7 +84,7 @@ body {
   display: flex;
   justify-content: space-around;
   border-top: 1px solid #dfd3c3;
-  padding: 25px 0 25px 0;
+  padding: 25px 0 30px 0;
 }
 
 .forecast-data-date {
@@ -96,27 +96,27 @@ body {
 
 .forecast-data-icon {
   text-align: center;
-  font-size: 38px;
+  width: 100%;
   margin-bottom: 10px;
 }
 
 .forecast-data-temp {
   text-align: center;
   color: #906c5c;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .forecast-data-highest-temp {
-  padding: 0 2px 0 0;
+  padding: 0 3px 0 0;
 }
 
 .forecast-data-lowest-temp {
-  padding: 0 0 0 2px;
+  padding: 0 0 0 3px;
 }
 
 footer {
   border-top: 1px solid #dfd3c3;
-  padding: 30px 0 0 0;
+  padding: 40px 0 5px 0;
   text-align: center;
   color: dimgray;
 }
